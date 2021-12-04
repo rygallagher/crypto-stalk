@@ -1,0 +1,7 @@
+{
+  "name": "crypto-stalk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
