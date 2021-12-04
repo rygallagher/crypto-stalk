@@ -24,47 +24,45 @@
 3. Tabs
 ---
 ## Data
-1. For now use the @ionic/storage simple key-value storage methodology https://github.com/ionic-team/ionic-storage
-2. Data should be simply stored with these keys
+1. For now use the [@ionic/storage module](https://github.com/ionic-team/ionic-storage)
+2. Data should be stored in key/value pairs
     - "my_list" an array of crypto config settings.
     - "my_list_sort" a string/enum that describes the user's preferred way to order the list.
     - "updates_opt_in_status" a boolean that indicates whether the user has opted in to background stalks.
     - "update_frequency" an int for how often the stalks should be performed.
     - "notifications_opt_in_status" a boolean that indicates whether the user has opted in to push notifications.
 3. Settings Examples
-
-```json 
-{
-    "my_list": [
-        {
-            "cmc_id": 1,
-            "stalks": [
-                {
-                    "type": "PERCENT",
-                    "value": 2,
-                    "frequency": 24
-                }, 
-                {
-                    "type": "THRESHOLD",
-                    "value": 50000,
-                    "frequency": null
-                }
-            ]
-        }
-    ],
-    "my_list_sort": "ALPHABETICAL",
-    "updates_opt_in_status": true,
-    "updates_frequency": 12,
-    "notifications_opt_in_status": true
-}
-```
-
-```json
-{
-    "my_list": [],
-    "my_list_sort": "DATE_WATCHED",
-    "updates_opt_in_status": false,
-    "updates_frequency": 1,
-    "notifications_opt_in_status": false
-}
-```
+    ```json 
+    {
+        "my_list": [
+            {
+                "cmc_id": 1,
+                "stalks": [
+                    {
+                        "type": "PERCENT",
+                        "value": 2,
+                        "frequency": 24
+                    }, 
+                    {
+                        "type": "THRESHOLD",
+                        "value": 50000,
+                        "frequency": null
+                    }
+                ]
+            }
+        ],
+        "my_list_sort": "ALPHABETICAL",
+        "updates_opt_in_status": true,
+        "updates_frequency": 12,
+        "notifications_opt_in_status": true
+    }
+    ```
+    ```json
+    {
+        "my_list": [],
+        "my_list_sort": "DATE_WATCHED",
+        "updates_opt_in_status": false,
+        "updates_frequency": 1,
+        "notifications_opt_in_status": false
+    }
+    ```
